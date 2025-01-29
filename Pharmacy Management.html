@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management System</title>
+    <link rel="stylesheet" href="Pharmacy Management.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pharmacy Management System</h1>
+        <div class="section">
+                <h2>Medicine Inventory Tracking</h2>
+    <!-- Inventory tracking elements -->
+    <div class="form-group">
+        <label for="quantity">Quantity on Hand:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity">
+    </div>
+    <div class="form-group">
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="date" id="expiration-date" name="expiration-date">
+    </div>
+    <div class="form-group">
+        <label for="replenishment-alert">Stock Replenishment Alert:</label>
+        <input type="checkbox" id="replenishment-alert" name="replenishment-alert">
+        <span>Notify when stock is low</span>
+   </div>
+
+        </div>
+        
+           <div class="section">
+    <h2>Prescription Management</h2>
+    <!-- Prescription management elements -->
+    <div class="form-group">
+        <label for="prescription-submission">Electronic Prescription Submission:</label>
+        <input type="checkbox" id="prescription-submission" name="prescription-submission">
+        <span>Allow electronic submission of prescriptions</span>
+    </div>
+    <div class="form-group">
+        <label for="patient-info">Patient Information:</label>
+        <input type="text" id="patient-info" name="patient-info" placeholder="Enter patient information">
+    </div>
+    <div class="form-group">
+        <label for="dosage-instructions">Dosage Instructions:</label>
+        <textarea id="dosage-instructions" name="dosage-instructions" placeholder="Enter dosage instructions"></textarea>
+    
+</div>
+
+        </div>
+        <div class="section">
+            <h2>Medicine Database</h2>
+            <div class="section">
+        <div class="medicine">
+        <h3>Gleanmark</h3>
+        <p><strong>Generic Name:</strong> Acetaminophen</p>
+        <p><strong>Brand Name:</strong> Gleanpain</p>
+        <p><strong>Dosage:</strong> 500 mg</p>
+        <p><strong>Strength:</strong> 500 mg</p>
+        <p><strong>Usage Instructions:</strong> Take 1 tablet every 6 hours as needed for pain relief.</p>
+    </div>
+    <div class="medicine">
+        <h3>Zeedrugs</h3>
+        <p><strong>Generic Name:</strong> Ibuprofen</p>
+        <p><strong>Brand Name:</strong> Zeeprofen</p>
+        <p><strong>Dosage:</strong> 200 mg</p>
+        <p><strong>Strength:</strong> 200 mg</p>
+        <p><strong>Usage Instructions:</strong> Take 1 tablet every 4 to 6 hours as needed for pain or fever.</p>
+    </div>
+    <div class="medicine">
+        <h3>Mankind</h3>
+        <p><strong>Generic Name:</strong> Omeprazole</p>
+        <p><strong>Brand Name:</strong> Manprazole</p>
+        <p><strong>Dosage:</strong> 20 mg</p>
+        <p><strong>Strength:</strong> 20 mg</p>
+        <p><strong>Usage Instructions:</strong> Take 1 capsule daily before breakfast for acid reflux or heartburn.</p>
+    </div>
+    <div class="medicine">
+        <h3>Leeford</h3>
+        <p><strong>Generic Name:</strong> Simvastatin</p>
+        <p><strong>Brand Name:</strong> Leestat</p>
+        <p><strong>Dosage:</strong> 40 mg</p>
+        <p><strong>Strength:</strong> 40 mg</p>
+        <p><strong>Usage Instructions:</strong> Take 1 tablet daily in the evening for cholesterol management.</p>
+    </div>
+        <div class="section">
+                <h2>Barcode Scanning</h2>
+    <!-- Barcode scanning elements -->
+    <div class="barcode">
+        <p>Barcode Scanner Integration</p>
+        <p>Scan barcodes to quickly add medicines to the inventory and track their movement within the pharmacy.</p>
+</div>
+
+        </div>
+        <div class="section">
+            
+    <h2>Automatic Refill Requests</h2>
+    <!-- Automatic refill request elements -->
+    <div class="refill-request">
+        <p>Reorder Points:</p>
+        <p>Set reorder points for each medicine to trigger automatic refill requests when the stock falls below the specified threshold.</p>
+        <p>Quantity Thresholds:</p>
+        <p>Determine the quantity threshold for each medicine to specify the minimum quantity required before a refill request is generated.</p>
+</div>
+
+        </div>
+        <div class="section">
+            <h2>Supplier Management</h2>
+            <!-- Supplier management elements -->
+            <!-- Contact information, Pricing, Delivery schedules, Payment terms -->
+        </div>
+        <div class="section">
+            
+    <h2>Price Management</h2>
+    <!-- Price management elements -->
+    <div class="price-management">
+        <p>Supplier Costs:</p>
+        <p>Keep track of the costs from medicine suppliers to determine the base price for each medicine.</p>
+        <p>Market Trends:</p>
+        <p>Monitor market trends and competitor pricing to adjust medicine prices accordingly.</p>
+        <p>Profit Margins:</p>
+        <p>Calculate profit margins and set pricing strategies to ensure profitability while remaining competitive.</p>
+
+</div>
+        </div>
+        <div class="section">
+            <h2>Dispensing Process</h2>
+            <div class="section">
+    <h2>Dispensing Process</h2>
+    <!-- Dispensing process elements -->
+    <div class="dispensing-process">
+        <p>Prescription Orders:</p>
+        <p>Receive electronic prescription orders from doctors containing patient information and prescribed medicines.</p>
+        <p>Picking:</p>
+        <p>Retrieve the required medicines from the inventory based on the prescription details.</p>
+        <p>Labeling:</p>
+        <p>Label each medicine container with the patient's name, dosage instructions, and other relevant information.</p>
+        <p>Packaging:</p>
+        <p>Package the dispensed medicines securely for delivery to the patient or pickup.</p>
+    </div>
+</div>
+        </div>
+        <div class="section">
+            <h2>Patient Records Integration</h2>
+            <!-- Patient records integration elements -->
+            <!-- Electronic health record (EHR) system integration -->
+        </div>
+        <div class="section">
+            <h2>Alerts and Notifications</h2>
+            <!-- Alerts and notifications elements -->
+            <!-- Low stock alerts, Prescription verification alerts -->
+        </div>
+        <div class="section">
+            <h2>Compliance and Regulation</h2>
+            <!-- Compliance and regulation elements -->
+            <!-- Medication storage, Handling, Dispensing standards -->
+        </div>
+        <div class="section">
+            <h2>Reporting and Analytics</h2>
+            <!-- Reporting and analytics elements -->
+            <!-- Medicine usage reports, Inventory turnover reports -->
+        </div>
+        <div class="section">
+            <h2>Mobile App Support</h2>
+            <!-- Mobile app support elements -->
+            <!-- Inventory management, Prescription processing -->
+        </div>
+        <div class="section">
+            <h2>Security and Access Control</h2>
+            <!-- Security and access control elements -->
+            <!-- User authentication, Role-based access -->
+        </div>
+                    <div class="section">
+    <h2>Patient Education</h2>
+    <!-- Patient education elements -->
+    <div class="patient-education">
+        <p>Medication Usage Information:</p>
+        <p>Provide patients with detailed information about how to use their prescribed medications correctly.</p>
+        <p>Side Effects:</p>
+        <p>Educate patients about potential side effects of their medications and how to manage them.</p>
+        <p>Treatment Adherence:</p>
+        <p>Encourage patients to adhere to their prescribed treatment regimens to achieve the best outcomes.</p>
+</div>
+
+        </div>
+    </div>
+</body>
+</html>

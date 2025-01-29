@@ -1,0 +1,33 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.ensemble import IsolationForest
+
+# Generate some data for demonstration
+np.random.seed(42)
+# Generate normal data points
+normal_data = np.random.normal(loc=0, scale=0.5, size=(1000, 2))
+# Generate some outliers
+outliers = np.random.uniform(low=-10, high=10, size=(50, 2))
+# Combine normal data and outliers
+data = np.vstack([normal_data, outliers])
+
+# Applying Isolation Forest
+clf = IsolationForest(contamination=0.05, random_state=42)
+clf.fit(data)
+
+# Predicting outliers
+y_pred = clf.predict(data)
+# -1 for outliers and 1 for inliers
+outliers_predicted = data[y_pred == -1]
+
+# Visualize the data and outliers detected by Isolation Forest
+plt.figure(figsize=(10, 6))
+plt.scatter(data[:,0], data[:,1], s=5, label='Data points')
+plt.scatter(outliers_predicted[:,0], outliers_predicted[:,1], color='r', s=20, label='Detected outliers')
+plt.title('Generated Data with Outliers and Detected Outliers by Isolation Forest')
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.legend()
+plt.show()
+
+print(f"Number of outliers detected: {len(outliers_predicted)}")
